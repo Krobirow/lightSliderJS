@@ -17,7 +17,7 @@ html, body, ul, li {
 #gallery, .photos, img {
     width: 100%;
     position: absolute;
-    left: 0;
+    margin: 0 auto;
     opacity: 0;
     transition: opacity 1s;
 }

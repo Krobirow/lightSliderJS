@@ -1,12 +1,16 @@
 const btn_prev = document.querySelector('#gallery .buttons .prev'),
     btn_next = document.querySelector('#gallery .buttons .next'),
-    images = document.querySelectorAll('#gallery .photos img');
+    images = document.querySelectorAll('.photos img');
 let i = 0;
 
-prev = () => {
-    images[i].className = '';
-    i--;
+console.log(images);
 
+console.log(btn_prev);
+console.log(btn_next);
+
+prev = () => {
+    images[i].className = 'hided';
+    i--;
     if( i < 0) {
         i = images.length - 1;
     }
@@ -15,7 +19,7 @@ prev = () => {
 };
 
 next = () => {
-    images[i].className = '';
+    images[i].className = 'hided';
     i++;
 
     if( i >= images.length) {

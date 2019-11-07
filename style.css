@@ -9,20 +9,23 @@ html, body, ul, li {
     text-align: center;
 }
 
-#gallery, .photos {
+#gallery .photos {
     position: relative;
-    height: 800px;
+    height: 900px;
 }
 
-#gallery, .photos, img {
+#gallery .photos img {
     width: 100%;
     position: absolute;
-    margin: 0 auto;
-    opacity: 0;
+    left: 0;
     transition: opacity 1s;
 }
 
-#gallery, .photos, img.showed {
+.hided {
+    opacity: 0;
+}
+
+.showed {
     opacity: 1;
 }
 

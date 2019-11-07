@@ -1,0 +1,29 @@
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gallery, .photos, img {
+    width: 100%;
+    display: none;
+}
+
+#gallery, .photos, img:first-child {
+    display: block;
+}
+
+button {
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    background: cornflowerblue;
+    color: cornsilk;
+    border: none;
+    font-size: 18px;
+}

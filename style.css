@@ -11,7 +11,7 @@ html, body, ul, li {
 
 #gallery, .photos {
     position: relative;
-    height: 100%;
+    height: 800px;
 }
 
 #gallery, .photos, img {

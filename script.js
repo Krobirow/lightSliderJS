@@ -4,25 +4,25 @@ const btn_prev = document.querySelector('#gallery .buttons .prev'),
 let i = 0;
 
 prev = () => {
-    images[i].style.display = 'none';
+    images[i].className = '';
     i--;
 
     if( i < 0) {
         i = images.length - 1;
     }
 
-    images[i].style.display = 'block';
+    images[i].className = 'showed';
 };
 
 next = () => {
-    images[i].style.display = 'none';
+    images[i].className = '';
     i++;
 
     if( i >= images.length) {
         i = 0;
     }
 
-    images[i].style.display = 'block';
+    images[i].className = 'showed';
 };
 
 btn_next.addEventListener('click', next);

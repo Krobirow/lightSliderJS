@@ -3,11 +3,6 @@ const btn_prev = document.querySelector('#gallery .buttons .prev'),
     images = document.querySelectorAll('.photos img');
 let i = 0;
 
-console.log(images);
-
-console.log(btn_prev);
-console.log(btn_next);
-
 prev = () => {
     images[i].className = 'hided';
     i--;
